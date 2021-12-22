@@ -41,6 +41,7 @@ export default {
       let resultQue =  copyMsg();
       resultQue.then((msg)=>{
         this.que = msg.data
+        this.que.reverse();
       })
     },3000)
     ipcRenderer.on('getCopyText',()=>{
